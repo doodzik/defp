@@ -40,14 +40,14 @@ class Example
 
   # With keyword arguments
   def self.keyword_params(value1: ,value2:)
-    defp(value1: 'hallo', value2: _) == 'bubu1' # you can specify blank vars
-    defp(value2: 'hallo') == -> { 'bubu2' }     # or not specifying them at all
-      'bubu3'
+  defp(value1: 'hallo', value2: _) == 'bubu1' # you can specify blank vars
+  defp(value2: 'hallo') == -> { 'bubu2' }     # or not specifying them at all
+    'bubu3'
   end
 
   # With mixed params
   def self.mixed_params(value1 = {}, value2, value3)
-    defp({value2: 'hallo'}, 'dud', _) == 'bubu1'
+  defp({value2: 'hallo'}, 'dud', _) == 'bubu1'
     'bubu2'
   end
 end
