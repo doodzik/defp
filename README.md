@@ -1,6 +1,7 @@
 # Defp
 
-An pattern matching implementation in ruby inspired by haskell
+An pattern matching implementation in ruby inspired by haskell.
+If you want to know about the inner workings of defp [check out this blog post](http://dudzik.co/blog/2014/10/27/i-went-on-a-journey-to-haskell-and-all-i-got-was-a-pattern-matcher-for-ruby/).
 
 ## Installation
 
@@ -30,18 +31,18 @@ class Example
   include CallBaecker
 
   # With normal params
-  def normal_params(value1, value2)
-  defp('hallo', _) == 'bubu1'
-  defp(_, 'hallo') == -> {
+  def  normal_params(value1, value2)
+  defp              ('hallo', _    ) == 'bubu1'
+  defp              (_, 'hallo'    ) == -> do
     'bubu2'
-  }
+  end
     'bubu3'
   end
 
   # With keyword arguments
   def self.keyword_params(value1: ,value2:)
   defp(value1: 'hallo', value2: _) == 'bubu1' # you can specify blank vars
-  defp(value2: 'hallo') == -> { 'bubu2' }     # or not specifying them at all
+  defp(value2: 'hallo')            == -> { 'bubu2' }     # or not specifying them at all
     'bubu3'
   end
 
@@ -55,7 +56,7 @@ end
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/defp/fork )
+1. Fork it ( https://github.com/doodzik/defp/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
