@@ -19,7 +19,7 @@ module Defp
       .all? do |arg|
         # TODO cleanup
         if arg[0].is_a? Hash
-          pattern_args = arg[0].reject {|k,v| !v}
+          pattern_args = arg[0].reject {|_,v| !v}
           pattern_args.keys.all? { |key| arg[1][key] == arg[0][key] }
         else
           arg[0] == arg[1]
@@ -33,7 +33,7 @@ module Defp
   end
 
   class NullBetween
-    def ==(valu)
+    def ==(_)
       nil
     end
   end
