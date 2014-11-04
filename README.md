@@ -1,5 +1,7 @@
 # Defp
 
+[![Build Status](https://travis-ci.org/doodzik/defp.svg?branch=master)](https://travis-ci.org/doodzik/defp)
+
 An pattern matching implementation in ruby inspired by haskell.
 If you want to know about the inner workings of defp [check out this blog post](http://dudzik.co/blog/2014/10/27/i-went-on-a-journey-to-haskell-and-all-i-got-was-a-pattern-matcher-for-ruby/).
 
