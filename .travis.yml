@@ -7,5 +7,6 @@ deploy:
     secure: UxH7NRGSSdTbNlrylAWiHOhuO3CAXnBUFjghCiKcf2jxfRdP79QpWsJvH8dSUs6auwDfO3Sp/g3hVbPGhrUbZgpw2Q3cCwMXg6okAFv6+4txhg9bpo5edT1i89mk7ekCJ+RTtC++UnGe1mojR9EV7Pcj/pJc7bwtJhjnUdMC9oU=
   gem: defp
   on:
+    all_branches: true
     tags: true
     repo: doodzik/defp
