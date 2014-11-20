@@ -19,6 +19,6 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.6"
   spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "CallBaecker"
   spec.add_development_dependency "minitest"
+  spec.add_dependency "CallBaecker", '0.0.3'
 end

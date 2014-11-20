@@ -22,7 +22,6 @@ And then execute:
 Or install it yourself as:
 
     $ gem install defp
-    $ gem install CallBaecker
 
 ## Usage
 
@@ -30,7 +29,6 @@ Or install it yourself as:
 class Example
   # please extend/include in this order
   extend Defp
-  include CallBaecker
 
   # With normal params
   def  normal_params(value1, value2)

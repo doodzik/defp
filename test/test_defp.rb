@@ -1,11 +1,9 @@
 require 'minitest/autorun'
-require 'CallBaecker'
 
 require 'defp'
 
 class Setup
   extend Defp
-  include CallBaecker
 
   def defp_normal_params(value1, value2)
   defp('hallo', false) == 'bubu1'

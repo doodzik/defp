@@ -1,9 +1,11 @@
 require "defp/version"
+require 'CallBaecker'
 
 module Defp
   def self.extended(base)
     base.send :include, DefpMethods
     base.extend DefpMethods
+    base.include CallBaecker
   end
 
   module DefpMethods
