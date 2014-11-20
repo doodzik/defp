@@ -1,10 +1,11 @@
 language: ruby
 rvm:
-    - 2.1.0
+- 2.1.0
 deploy:
   provider: rubygems
-  on:
-    all_branches: true
-    tags: true
   api_key:
-    secure: Y7POmuScGqytztSAB+XmVKuORZA7rkgIB9YQ/nTAKfT9BliXlTuKHKLpYGbbnh/oxm5YLKMYicOGC3jSG7ReYhNiRuVW1CU2pdxzY/iVFaLJzhaerswKtdz10fQZSCD/cnsT5AJaowDiBbOHRDCFBp3BaY39ltoPX6YrBPLzLzA=
+    secure: UxH7NRGSSdTbNlrylAWiHOhuO3CAXnBUFjghCiKcf2jxfRdP79QpWsJvH8dSUs6auwDfO3Sp/g3hVbPGhrUbZgpw2Q3cCwMXg6okAFv6+4txhg9bpo5edT1i89mk7ekCJ+RTtC++UnGe1mojR9EV7Pcj/pJc7bwtJhjnUdMC9oU=
+  gem: defp
+  on:
+    tags: true
+    repo: doodzik/defp
