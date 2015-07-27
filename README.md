@@ -30,8 +30,8 @@ class Example
 
   # With normal params
   def  normal_params(value1, value2)
-  defp              ('hallo', _    ) == 'foo'
-  defp              (_, 'hallo'    ) == -> do
+  defp              ('hello', _    ) == 'foo'
+  defp              (_, 'hello'    ) == -> do
     'bar'
   end
     'baz'
@@ -46,7 +46,7 @@ class Example
 
   # With mixed params
   def self.mixed_params(value1 = {}, value2, value3)
-  defp({value2: 'hallo'}, 'dud', _) == 'foo'
+  defp({value2: 'hello'}, 'dud', _) == 'foo'
     'bar'
   end
 end
