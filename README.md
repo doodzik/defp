@@ -11,7 +11,6 @@ Add this line to your application's Gemfile:
 
 
 ```ruby
-gem 'CallBaecker'
 gem 'defp'
 ```
 
@@ -27,7 +26,6 @@ Or install it yourself as:
 
 ```ruby
 class Example
-  # please extend/include in this order
   extend Defp
 
   # With normal params
